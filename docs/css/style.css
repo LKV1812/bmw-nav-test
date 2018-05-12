@@ -1,0 +1,104 @@
+@import url(reset.css);
+@import url(utils.css);
+
+html, body {
+	height: 100%;	
+	font-family: 'PT Sans', sans-serif;
+	background-image: url(../img/bmw-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
+	
+}
+
+.nav {
+	background: #000;
+	font-size: 0;
+	text-align: center;
+}
+
+.nav__list {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.nav__link {
+	display: block;
+	padding: 15px 25px;
+	color: #FFF;
+	text-decoration: none;
+	border-left: 1px solid #DCDCDC;
+}
+
+.nav__link:hover {
+	color: #000;
+	background: #DCDCDC;
+}
+
+.border-right {
+	border-right: 1px solid #DCDCDC;
+}
+
+#pull {
+	display: none;
+	font-size: 18px;
+	background: #000;
+	position: relative;
+}
+
+#pull:hover {
+	background: #DCDCDC;
+}
+
+#pull::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 14px;
+	right: 5px;
+	background: url(../img/nav-icon.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width : 720px) {
+	
+	#pull {
+		display: block;
+	}
+
+	.nav__menu {
+		display: none;
+	}
+
+	.nav__list {
+		display: block;
+	}
+
+	.nav__link {
+		border: none;
+		border-bottom: 1px solid #DCDCDC;
+		background: #2F4F4F;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
